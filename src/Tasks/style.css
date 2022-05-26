@@ -1,0 +1,46 @@
+.taskList {
+    list-style: none;
+    margin-left: -40px;
+    padding: 15px;
+}
+
+.taskList__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: solid 1.5px #e8e8ee;
+}
+
+.taskList_content--done {
+    text-decoration: line-through;
+}
+
+ .button__done {
+    background: #1b7c1f;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: none;
+    transition: 0.3s;
+ }
+ 
+ .button__done:hover {
+    background: #1e9f22;
+    cursor: pointer;
+ }
+ 
+ .button__remove {
+    background: #ec293d;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: none;
+    transition: 0.3s;
+ }
+ 
+ .button__remove:hover {
+    background: #fe4659;
+    cursor: pointer;
+ }
