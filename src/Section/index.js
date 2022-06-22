@@ -7,7 +7,7 @@ const Section = ({ title, body, extraHeaderContent }) => (
             {extraHeaderContent}
         </header>
         <div className="section__decorationLine section__decorationLine--position"></div>
-        <ul className="section__listOfTasks">{body}</ul>
+        {body}
     </section>
 );
 
