@@ -1,7 +1,7 @@
 # Task list - React
 
 Hello, I’m pleased to present to you my project. I made it as one of the tasks during the Front-end developer course (youcode.pl), which I’ve been attending. 
-The task was to make it work and look like the project they showed us. This is my first project using React. At this point there isn’t  interaction possible. 
+The task was to make it work and look like the project they showed us. This is my first project using React.
 ![How does it looks like?](https://github.com/HaniaNassalska/todos-list-react/blob/main/README/reademe.gif?raw=true)
 ## [Demo version](https://hanianassalska.github.io/todos-list-react/)
 ## Getting Started with Create React App
