@@ -6,7 +6,11 @@ const Form = ({ addNewTask }) => {
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        addNewTask(newTaskContent.trim())
+        const trimmedNewTaskContent = newTaskContent.trim();
+        if (trimmedNewTaskContent === "") {
+            return
+        };
+        addNewTask(trimmedNewTaskContent);
         setNewTaskContent("");
     };
 
@@ -21,7 +25,6 @@ const Form = ({ addNewTask }) => {
             />
             <button
                 className="form__button"
-                disabled={newTaskContent.length === 0}
             >
                 Dodaj zadanie</button>
         </form>
