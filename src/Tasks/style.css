@@ -11,10 +11,10 @@
     padding: 10px;
     border-bottom: solid 1.5px #e8e8ee;
 }
-.taskList__hiddenTasks {
+.taskList__item--hidden {
    display: none;
 }
-.taskList_content--done {
+.taskList__content--done {
     text-decoration: line-through;
 }
 
