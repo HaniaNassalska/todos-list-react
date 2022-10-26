@@ -8,11 +8,16 @@ import { useState } from "react";
 
 
 function App() {
+    const previousTasksList = JSON.parse(localStorage.getItem("tasks"));
+
     const [hideDone, setHideDone] = useState(false);
-    const [tasks, setTasks] = useState([
-        { id: 1, content: "Przejść na Reacta", done: false },
-        { id: 2, content: "Zrobić zadanie", done: true },
-    ]);
+    const [tasks, setTasks] = useState(
+        (
+            previousTasksList ? previousTasksList : []
+            
+        ));
+
+    localStorage.setItem("tasks", JSON.stringify(tasks));
 
     const toggleHideDone = () => {
         setHideDone(hideDone => !hideDone);
