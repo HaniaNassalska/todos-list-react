@@ -1,4 +1,3 @@
-import "./style.css";
 import { StyledForm, StyledFromInput, StyledFormButton } from "./styled";
 import { useState, useRef } from "react";
 
