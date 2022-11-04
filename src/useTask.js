@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
 
 const useTask = () => {
-    const previousTasksList = JSON.parse(localStorage.getItem("tasks"));
 
-    const [tasks, setTasks] = useState(
-        (
-            previousTasksList ? previousTasksList : []
-        ));
+    const getInitialTasks = () => {
+        const previousTasksList = JSON.parse(localStorage.getItem("tasks"));
+        return previousTasksList
+            ? previousTasksList
+            : [];
+    }
+
+    const [tasks, setTasks] = useState(getInitialTasks);
 
     useEffect(() => {
         localStorage.setItem("tasks", JSON.stringify(tasks));
