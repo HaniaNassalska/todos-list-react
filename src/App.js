@@ -5,7 +5,9 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import useTask from "./useTask";
+import theme from "./theme";
 import { useState } from "react";
+import {ThemeProvider} from "styled-components";
 
 function App() {
     const {
@@ -23,6 +25,9 @@ function App() {
     };
 
     return (
+        <ThemeProvider
+        theme={theme}
+        >
         <Container>
             <Header title={"Lista zadań"} />
 
@@ -50,6 +55,7 @@ function App() {
                 }
             />
         </Container>
+        </ThemeProvider>
     );
 }
 

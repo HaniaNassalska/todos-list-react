@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const StyledButtons = styled.button`
 background-color: transparent;
 border: none;
-color: #007380;
+color: ${(props)=> props.theme.colors.teal};
 transition: 0.3s;
 padding-top: 12px;
 
 &:hover {
-    color: #52b5c0;
+    color: ${(props)=> props.theme.colors.lighterTeal};
     cursor: pointer;
 };
 

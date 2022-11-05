@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledSection = styled.section`
-    background-color: white;
+    background-color: ${(props)=> props.theme.colors.white};
     margin-bottom: 1px;
 `
 
@@ -11,7 +11,7 @@ export const StyledSectionHeader = styled.header`
     grid-template-rows: 3;
 
 
-    @media (max-width: 768px) {
+    @media (max-width: ${(props)=> props.theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr 200px 1fr;
         grid-template-rows: 4;
     }
@@ -34,7 +34,7 @@ export const StyledSectionButtons = styled.span`
     justify-content: end;
     align-content: end;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${(props)=> props.theme.breakpoint.mobileMax}px) {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
