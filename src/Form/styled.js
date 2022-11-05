@@ -6,7 +6,7 @@ export const StyledForm = styled.form`
     grid-gap: 10px;
 
 
-    @media (max-width: ${(props)=> props.theme.breakpoint.mobileMax}px) {
+    @media (max-width: ${({theme})=> theme.breakpoint.mobileMax}px) {
       display: grid;
       grid-template-columns: auto;
       grid-gap: 10px;
@@ -17,14 +17,14 @@ export const StyledFromInput = styled.input`
    margin: 15px 5px 20px 20px;
    border: solid 1px;
 
-   @media (max-width: ${(props)=> props.theme.breakpoint.mobileMax}px) {
+   @media (max-width: ${({theme})=> theme.breakpoint.mobileMax}px) {
       margin: 20px 15px 0px;
    }
 `
 
 export const StyledFormButton = styled.button`
-   background-color: ${(props)=> props.theme.colors.teal};
-   color: ${(props)=> props.theme.colors.white};
+   background-color: ${({theme})=> theme.colors.teal};
+   color: ${({theme})=> theme.colors.white};
    padding: 8px;
    border: none;
    margin: 15px 20px 20px 5px;
@@ -32,20 +32,20 @@ export const StyledFormButton = styled.button`
    cursor: pointer;
 
    &:hover{
-      @media (min-width: ${(props)=> props.theme.breakpoint.desktopMin}px) {
+      @media (min-width: ${({theme})=> theme.breakpoint.desktopMin}px) {
       transform: scale(1.05);
-      background-color: ${(props)=> props.theme.colors.lighterTeal};
+      background-color: ${({theme})=> theme.colors.lighterTeal};
       cursor: pointer;
    }     
    } 
 
   &:hover{
-      @media (max-width: ${(props)=> props.theme.breakpoint.mobileMax}px) {
-      background-color: ${(props)=> props.theme.colors.lighterTeal};
+      @media (max-width: ${({theme})=> theme.breakpoint.mobileMax}px) {
+      background-color: ${({theme})=> theme.colors.lighterTeal};
     } 
    }
 
-   @media (max-width: ${(props)=> props.theme.breakpoint.mobileMax}px) {
+   @media (max-width: ${({theme})=> theme.breakpoint.mobileMax}px) {
         margin: 0 15px 15px;
    }
 `

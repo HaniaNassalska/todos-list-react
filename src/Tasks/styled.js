@@ -26,24 +26,24 @@ export const StyledContent = styled.span`
 export const StyledButton = styled.button`
     width: 30px;
     height: 30px;
-    color: ${(props)=> props.theme.colors.white};
+    color: ${({theme})=> theme.colors.white};
     border: none;
     transition: 0.3s;
 
     ${({togleDone}) => togleDone && css`
-    background: ${(props)=> props.theme.colors.green};
+    background: ${({theme})=> theme.colors.green};
 
     &:hover{
-        background: ${(props)=> props.theme.colors.lighterGreen};
+        background: ${({theme})=> theme.colors.lighterGreen};
         cursor: pointer;
     }
     `}
 
     ${({remove}) => remove && css`
-    background: ${(props)=> props.theme.colors.red};
+    background: ${({theme})=> theme.colors.red};
 
     &:hover{
-        background: ${(props)=> props.theme.colors.lighterRed};;
+        background: ${({theme})=> theme.colors.lighterRed};;
         cursor: pointer;
     }
     `}    
