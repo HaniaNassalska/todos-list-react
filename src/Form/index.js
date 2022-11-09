@@ -1,4 +1,4 @@
-import { StyledForm, StyledFromInput, StyledFormButton } from "./styled";
+import { StyledForm, Input, Button } from "./styled";
 import { useState, useRef } from "react";
 
 const Form = ({ addNewTask }) => {
@@ -18,17 +18,17 @@ const Form = ({ addNewTask }) => {
 
     return (
         <StyledForm onSubmit={onFormSubmit}>
-            <StyledFromInput
+            <Input
                 value={newTaskContent}
                 placeholder="Co jest do zrobienia?"
                 autoFocus
                 onChange={({ target }) => setNewTaskContent(target.value)}
                 ref={inputRef}
             />
-            <StyledFormButton
+            <Button
                 onClick={() => inputRef.current.focus()}
             >
-                Dodaj zadanie</StyledFormButton>
+                Dodaj zadanie</Button>
         </StyledForm>
     );
 };

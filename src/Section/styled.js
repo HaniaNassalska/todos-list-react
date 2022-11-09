@@ -5,7 +5,7 @@ export const StyledSection = styled.section`
     margin-bottom: 1px;
 `
 
-export const StyledSectionHeader = styled.header`
+export const Header = styled.header`
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 3;
@@ -17,7 +17,7 @@ export const StyledSectionHeader = styled.header`
     }
 `
 
-export const StyledSectionTitle = styled.h2`
+export const Title = styled.h2`
     padding-left: 20px;
     padding-top: 18px;
     font-size: 20px;
@@ -27,7 +27,7 @@ export const StyledSectionTitle = styled.h2`
     grid-row-start: 1;
 `
 
-export const StyledSectionButtons = styled.span`
+export const Buttons = styled.span`
     padding: 20px;
     grid-column: 3/4;
     grid-row-start: 1;
@@ -43,13 +43,13 @@ export const StyledSectionButtons = styled.span`
         flex-wrap: wrap;
     }
 `
-export const StyledSectionDecorationalLine = styled.div`
+export const DecorationalLine = styled.div`
     border-bottom: solid 1.5px #e8e8ee;
     grid-column-start: 1;
     grid-column-end: 4;
 `
 
-export const StyledSectionListOfTasks = styled.div`
+export const ListOfTasks = styled.div`
     grid-row-start: 3;
     grid-column-start: 1;
     grid-column-end: 4;

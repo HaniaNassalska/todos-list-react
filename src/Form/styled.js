@@ -12,7 +12,7 @@ export const StyledForm = styled.form`
       grid-gap: 10px;
    }
 `
-export const StyledFromInput = styled.input`
+export const Input = styled.input`
    padding: 8px;
    margin: 15px 5px 20px 20px;
    border: solid 1px;
@@ -22,7 +22,7 @@ export const StyledFromInput = styled.input`
    }
 `
 
-export const StyledFormButton = styled.button`
+export const Button = styled.button`
    background-color: ${({theme})=> theme.colors.teal};
    color: ${({theme})=> theme.colors.white};
    padding: 8px;
