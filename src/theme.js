@@ -1,13 +1,10 @@
 const theme = {
     colors: {
     teal: "#007380",
-    lighterTeal: "#52b5c0",
-    green: "#1b7c1f",
-    lighterGreen: "#1e9f22",
-    red: "#ec293d",
-    lighterRed: "#fe4659",
+    forestGreen: "#1b7c1f",
+    crimson: "#ec293d",
     white: "white",
-    silver: "#eeee"
+    gallery: "#eeee"
     },
 
     breakpoint: {

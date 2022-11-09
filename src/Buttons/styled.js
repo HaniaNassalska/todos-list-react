@@ -8,7 +8,7 @@ export const Button = styled.button`
     padding-top: 12px;
 
 &:hover {
-    color: ${({ theme }) => theme.colors.lighterTeal};
+    filter: brightness(110%);
     cursor: pointer;
 };
 

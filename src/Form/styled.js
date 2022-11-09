@@ -34,14 +34,14 @@ export const Button = styled.button`
    &:hover{
       @media (min-width: ${({theme})=> theme.breakpoint.desktopMin}px) {
       transform: scale(1.05);
-      background-color: ${({theme})=> theme.colors.lighterTeal};
+      filter: brightness(120%);
       cursor: pointer;
    }     
    } 
 
   &:hover{
       @media (max-width: ${({theme})=> theme.breakpoint.mobileMax}px) {
-      background-color: ${({theme})=> theme.colors.lighterTeal};
+         filter: brightness(120%);
     } 
    }
 
