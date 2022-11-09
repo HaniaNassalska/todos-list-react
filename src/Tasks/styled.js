@@ -29,22 +29,22 @@ export const Button = styled.button`
     color: ${({theme})=> theme.colors.white};
     border: none;
     transition: 0.3s;
+`
 
-    ${({togleDone}) => togleDone && css`
+export const ToggleDoneButton = styled(Button)`
     background: ${({theme})=> theme.colors.green};
 
     &:hover{
         background: ${({theme})=> theme.colors.lighterGreen};
         cursor: pointer;
     }
-    `}
+`
 
-    ${({remove}) => remove && css`
+export const RemoveButton = styled(Button)`
     background: ${({theme})=> theme.colors.red};
 
     &:hover{
-        background: ${({theme})=> theme.colors.lighterRed};;
+        background: ${({theme})=> theme.colors.lighterRed};
         cursor: pointer;
     }
-    `}    
-`
+  `
