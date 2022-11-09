@@ -5,9 +5,7 @@ import Section from "./Section";
 import Header from "./Header";
 import { Container } from "./Container/styled";
 import useTask from "./useTask";
-import theme from "./theme";
 import { useState } from "react";
-import {ThemeProvider} from "styled-components";
 
 function App() {
     const {
@@ -19,15 +17,12 @@ function App() {
     } = useTask();
 
     const [hideDone, setHideDone] = useState(false);
-    
+
     const toggleHideDone = () => {
         setHideDone(hideDone => !hideDone);
     };
 
     return (
-        <ThemeProvider
-        theme={theme}
-        >
         <Container>
             <Header title={"Lista zadań"} />
 
@@ -55,7 +50,6 @@ function App() {
                 }
             />
         </Container>
-        </ThemeProvider>
     );
 }
 
