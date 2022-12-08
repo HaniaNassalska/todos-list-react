@@ -19,7 +19,7 @@ const Form = () => {
             done: false,
             id: nanoid(),
         }));
-        
+
         setNewTaskContent("");
     };
 

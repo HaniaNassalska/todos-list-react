@@ -21,7 +21,6 @@ const tasksSlice = createSlice({
             const index = tasks.findIndex(({ id }) => id === payload);
             tasks.splice(index, 1);
         },
-
         setAllDone: ({ tasks }) => {
             tasks.forEach((task) => { task.done = true });
         }
