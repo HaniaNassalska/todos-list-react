@@ -19,7 +19,7 @@ const Form = () => {
             done: false,
             id: nanoid(),
         }));
-        
+
         setNewTaskContent("");
     };
 
@@ -37,7 +37,8 @@ const Form = () => {
             <Button
                 onClick={() => inputRef.current.focus()}
             >
-                Dodaj zadanie</Button>
+                Dodaj zadanie
+            </Button>
         </StyledForm>
     );
 };
