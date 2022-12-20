@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const StyledSection = styled.section`
-    background-color: ${({theme})=> theme.colors.white};
-    margin-bottom: 1px;
+    background-color: ${({ theme }) => theme.colors.white};
+    margin-bottom: 10px;
 `
 
 export const Header = styled.header`
@@ -11,7 +11,7 @@ export const Header = styled.header`
     grid-template-rows: 3;
 
 
-    @media (max-width: ${({theme})=> theme.breakpoint.mobileMax}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr 200px 1fr;
         grid-template-rows: 4;
     }
@@ -26,7 +26,25 @@ export const Title = styled.h2`
     grid-column-end: 4;
     grid-row-start: 1;
 `
+export const Button = styled.button`
+    background-color: transparent;
+    border: none;
+    color: ${({ theme }) => theme.colors.teal};
+    transition: 0.3s;
+    padding-top: 12px;
 
+&:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+};
+
+&:disabled {
+    background-color: transparent;
+    border: none;
+    color: rgb(79, 79, 79);
+    cursor: default;
+}
+`
 export const Buttons = styled.span`
     padding: 20px;
     grid-column: 3/4;
@@ -34,7 +52,7 @@ export const Buttons = styled.span`
     justify-content: end;
     align-content: end;
 
-    @media (max-width: ${({theme})=> theme.breakpoint.mobileMax}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
