@@ -3,7 +3,7 @@ import { StyledForm, Input } from "./styled";
 const SearchEngine = () => (
   <StyledForm>
     <Input
-      placeholder="Filtruj zadania"
+      placeholder="Filtruj"
       autoFocus
     />
   </StyledForm>

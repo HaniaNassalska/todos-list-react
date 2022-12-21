@@ -3,9 +3,9 @@ import TasksList from "./TasksList";
 import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
-import SearchEngine from "../../common/SearchEngine";
+import SearchEngine from "./SearchEngine";
 import { Container } from "../../common/Container/styled";
-import DownloadTasksButton from "../../common/DownloadTasksButton";
+import DownloadTasksButton from "./DownloadTasksButton";
 
 function Tasks() {
 
