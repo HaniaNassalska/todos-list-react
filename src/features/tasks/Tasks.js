@@ -3,7 +3,9 @@ import TasksList from "./TasksList";
 import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
+import SearchEngine from "../../common/SearchEngine";
 import { Container } from "../../common/Container/styled";
+import DownloadTasksButton from "../../common/DownloadTasksButton";
 
 function Tasks() {
 
@@ -12,12 +14,20 @@ function Tasks() {
             <Header title={"Lista zadań"} />
             <Section
                 title="Dodaj nowe zadanie"
+                extraHeaderContent={
+                    <DownloadTasksButton 
+                    title={"Dodaj przykładowe zadania"} />
+                }
                 body={<Form />}
-                />
+            />
+            <Section
+                title="Wyszukiwarka"
+                body={<SearchEngine />} 
+            />
             <Section
                 title="Lista zadań"
-                extraHeaderContent={<Buttons/>}
-                body={<TasksList/> }
+                extraHeaderContent={<Buttons />}
+                body={<TasksList />}
             />
         </Container>
     );
