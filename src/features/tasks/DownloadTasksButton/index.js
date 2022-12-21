@@ -1,11 +1,11 @@
 import { useDispatch } from "react-redux";
-import { fetchExapleTasks } from "../tasksSlice";
+import { fetchExampleTasks } from "../tasksSlice";
 import { Button } from "./styled";
 
 const DownloadTasksButton = ({title}) => {
   const dispatch = useDispatch();
   return (
-  <Button onClick={() => dispatch(fetchExapleTasks)()}>
+  <Button onClick={() => dispatch(fetchExampleTasks())}>
   {title}
  </Button>
 )
