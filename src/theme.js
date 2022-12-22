@@ -4,7 +4,8 @@ const theme = {
     forestGreen: "#1b7c1f",
     crimson: "#ec293d",
     white: "white",
-    gallery: "#eeee"
+    gallery: "#eeee",
+    grey: "grey"
     },
 
     breakpoint: {

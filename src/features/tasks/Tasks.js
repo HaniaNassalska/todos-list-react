@@ -14,15 +14,12 @@ function Tasks() {
             <Header title={"Lista zadań"} />
             <Section
                 title="Dodaj nowe zadanie"
-                extraHeaderContent={
-                    <DownloadTasksButton 
-                    title={"Dodaj przykładowe zadania"} />
-                }
+                extraHeaderContent={<DownloadTasksButton />}
                 body={<Form />}
             />
             <Section
                 title="Wyszukiwarka"
-                body={<SearchEngine />} 
+                body={<SearchEngine />}
             />
             <Section
                 title="Lista zadań"

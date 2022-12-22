@@ -30,7 +30,14 @@ const tasksSlice = createSlice({
         },
         setTask: (state, { payload: tasks }) => {
             state.tasks = tasks;
+        },
+        fetchDownloadTaskSuccess: state => {
+            state.loading = false
+        },
+        fetchDownloadingTasks: state => {
+            state.loading = true
         }
+
     },
 });
 
@@ -42,6 +49,9 @@ export const {
     setAllDone,
     fetchExampleTasks,
     setTask,
+    fetchDownloadingTasks,
+    fetchDownloadTaskSuccess
 } = tasksSlice.actions;
 export const selectTasks = state => state.tasks;
+export const selectDownloadState = state => state.tasks.loading;
 export default tasksSlice.reducer;
