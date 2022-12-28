@@ -1,11 +1,11 @@
-import Form from "./Form";
-import TasksList from "./TasksList";
-import Buttons from "./Buttons";
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import Search from "./Search";
-import { Container } from "../../common/Container/styled";
-import DownloadTasksButton from "./DownloadTasksButton";
+import Form from "../TasksPage/Form";
+import TasksList from "../TasksPage/TasksList";
+import Buttons from "../TasksPage/Buttons";
+import Section from "../../../common/Section";
+import Header from "../../../common/Header";
+import Search from "../TasksPage/Search";
+import { Container } from "../../../common/Container/styled";
+import DownloadTasksButton from "../TasksPage/DownloadTasksButton";
 
 function Tasks() {
 
