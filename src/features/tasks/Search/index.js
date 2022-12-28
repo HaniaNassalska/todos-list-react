@@ -1,4 +1,4 @@
-import { StyledForm, Input } from "../Input";
+import { StyledForm, Input } from "../Input/styled";
 
 const Search = () => (
   <StyledForm>

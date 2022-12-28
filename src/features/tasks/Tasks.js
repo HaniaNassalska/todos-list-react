@@ -3,8 +3,8 @@ import TasksList from "./TasksList";
 import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
-import SearchEngine from "./SearchEngine";
-import { Container } from "../../common/Container/styled";
+import Search from "./Search";
+import { Container } from "../../common/Container";
 import DownloadTasksButton from "./DownloadTasksButton";
 
 function Tasks() {
@@ -19,7 +19,7 @@ function Tasks() {
             />
             <Section
                 title="Wyszukiwarka"
-                body={<SearchEngine />}
+                body={<Search />}
             />
             <Section
                 title="Lista zadań"
