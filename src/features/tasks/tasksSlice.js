@@ -52,6 +52,11 @@ export const {
     fetchDownloadingTasks,
     fetchDownloadTaskSuccess
 } = tasksSlice.actions;
-export const selectTasks = state => state.tasks;
+export const selectTasksState = state => state.tasks;
+export const selectTasks = (state) => selectTasksState(state).tasks;
 export const selectDownloadState = state => state.tasks.loading;
+
+export const getTaskById = (state, taskId) =>
+selectTasks(state).find(({ id }) => id === taskId);
+
 export default tasksSlice.reducer;

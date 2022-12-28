@@ -1,9 +1,9 @@
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import { Container } from "../../common/Container/styled";
-import TextContainer from "../author/TextContainer"
+import TextContainer from "./TextContainer"
 
-function Author() {
+function AuthorPage() {
 
   return (
     <Container>
@@ -25,4 +25,4 @@ function Author() {
   );
 }
 
-export default Author;
+export default AuthorPage;

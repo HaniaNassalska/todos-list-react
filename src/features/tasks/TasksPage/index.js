@@ -7,7 +7,7 @@ import Search from "../TasksPage/Search";
 import { Container } from "../../../common/Container/styled";
 import DownloadTasksButton from "../TasksPage/DownloadTasksButton";
 
-function Tasks() {
+function TasksPage() {
 
     return (
         <Container>
@@ -30,4 +30,4 @@ function Tasks() {
     );
 }
 
-export default Tasks;
+export default TasksPage;
