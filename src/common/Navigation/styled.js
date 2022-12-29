@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledNavigation = styled.nav`
   background-color: ${({ theme }) => theme.colors.teal};
-`
+`;
 
 export const NaviList = styled.ul`
   list-style-type: none;
@@ -12,7 +12,7 @@ export const NaviList = styled.ul`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     justify-content: start;
   }
-`
+`;
 
 export const Navi = styled.li`
   display: grid;
@@ -24,4 +24,4 @@ export const Navi = styled.li`
     grid-gap: 50px;
     padding: 20px;;
   }
-`
+`;

@@ -10,7 +10,7 @@ export const StyledForm = styled.form`
       grid-template-columns: auto;
       grid-gap: 10px;
    }
-`
+`;
 
 export const Input = styled.input`
    padding: 8px;
@@ -21,4 +21,4 @@ export const Input = styled.input`
    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
       margin: 20px 15px 0px;
    }
-`
+`;

@@ -18,4 +18,4 @@ export const StyledButton = styled.button`
     color: ${({ theme }) => theme.colors.grey};
     cursor: default;
   }
-`
+`;

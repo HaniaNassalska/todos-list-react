@@ -11,4 +11,4 @@ color: ${({ theme }) => theme.colors.white};
  &.${activeClassName} {
  font-weight: bold
  }
-`
+`;

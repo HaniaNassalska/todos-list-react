@@ -3,7 +3,7 @@ import styled, {css} from "styled-components"
 export const List = styled.ul`
     list-style: none;
     padding: 15px;
-`
+`;
 
 export const Task = styled.li`
     display: grid;
@@ -16,13 +16,13 @@ export const Task = styled.li`
     ${({hidden}) => hidden && css`
         display: none
     `}
-`
+`;
 
 export const Content = styled.span`
     ${({done}) => done && css`
         text-decoration: line-through
     `}
-`
+`;
 
 export const Button = styled.button`
     width: 30px;
@@ -30,7 +30,7 @@ export const Button = styled.button`
     color: ${({theme})=> theme.colors.white};
     border: none;
     transition: 0.3s;
-`
+`;
 
 export const ToggleDoneButton = styled(Button)`
     background: ${({theme})=> theme.colors.forestGreen};
@@ -39,7 +39,7 @@ export const ToggleDoneButton = styled(Button)`
         filter: brightness(120%);
         cursor: pointer;
     }
-`
+`;
 
 export const RemoveButton = styled(Button)`
     background: ${({theme})=> theme.colors.crimson};
@@ -48,4 +48,4 @@ export const RemoveButton = styled(Button)`
         filter: brightness(120%);
         cursor: pointer;
     }
-  `
+  `;
