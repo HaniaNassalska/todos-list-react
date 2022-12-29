@@ -10,7 +10,6 @@ export const Header = styled.header`
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 3;
 
-
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr 200px 1fr;
         grid-template-rows: 4;
@@ -33,18 +32,19 @@ export const Button = styled.button`
     transition: 0.3s;
     padding-top: 12px;
 
-&:hover {
-    filter: brightness(110%);
-    cursor: pointer;
-};
+    &:hover {
+        filter: brightness(110%);
+        cursor: pointer;
+    }
 
-&:disabled {
-    background-color: transparent;
-    border: none;
-    color: rgb(79, 79, 79);
-    cursor: default;
-}
+    &:disabled {
+        background-color: transparent;
+        border: none;
+        color: rgb(79, 79, 79);
+        cursor: default;
+    }
 `
+
 export const Buttons = styled.span`
     padding: 20px;
     grid-column: 3/4;

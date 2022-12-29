@@ -7,15 +7,15 @@ export const StyledButton = styled.button`
   transition: 0.3s;
   padding-top: 12px;
 
-&:hover {
-  filter: brightness(110%);
-  cursor: pointer;
-};
+  &:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+  };
 
-&:disabled {
-  background-color: transparent;
-  border: none;
-  color: ${({ theme }) => theme.colors.grey};
-  cursor: default;
-}
+  &:disabled {
+    background-color: transparent;
+    border: none;
+    color: ${({ theme }) => theme.colors.grey};
+    cursor: default;
+  }
 `

@@ -11,9 +11,9 @@ export const Button = styled.button`
 
    &:hover{
       @media (min-width: ${({ theme }) => theme.breakpoint.desktopMin}px) {
-      transform: scale(1.05);
-      filter: brightness(120%);
-      cursor: pointer;
+         transform: scale(1.05);
+         filter: brightness(120%);
+         cursor: pointer;
       }     
    } 
 
