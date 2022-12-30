@@ -13,15 +13,3 @@ export const NaviList = styled.ul`
     justify-content: start;
   }
 `;
-
-export const Navi = styled.li`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
-  padding: 20px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    grid-gap: 50px;
-    padding: 20px;;
-  }
-`;

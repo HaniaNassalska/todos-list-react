@@ -1,11 +1,9 @@
-import { StyledNavigation, NaviList, Navi } from "./styled";
+import { StyledNavigation, NaviList } from "./styled";
 
 const Navigation = ({ body }) => (
   <StyledNavigation>
     <NaviList>
-      <Navi>
-        {body}
-      </Navi>
+      {body}
     </NaviList>
   </StyledNavigation>
 )

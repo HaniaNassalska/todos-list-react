@@ -1,18 +1,17 @@
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import AuthorPage from "./features/author/index.js";
 import Navigation from "./common/Navigation";
-import { StyledNavLink } from "./styled";
+import { NaviItem, StyledNavLink } from "./styled";
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage/index";
-
 
 export default () => (
   <HashRouter>
     <Navigation
       body={
         <>
-          <li><StyledNavLink to="/zadania">Zadania</StyledNavLink></li>
-          <li><StyledNavLink to="/autor">O autorze</StyledNavLink></li>
+          <NaviItem><StyledNavLink to="/zadania">Zadania</StyledNavLink></NaviItem>
+          <NaviItem><StyledNavLink to="/autor">O autorze</StyledNavLink></NaviItem>
         </>
       }>
     </Navigation>
