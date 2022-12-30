@@ -14,6 +14,8 @@ The task was to make it work and look like the project they showed us. This is m
 - JSX
 - Styled Components
 - Redux
+- Redux-Saga
+- React Router
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
