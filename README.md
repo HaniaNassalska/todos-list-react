@@ -5,7 +5,7 @@ The task was to make it work and look like the project they showed us. This is m
 
 ## How does it looks like?
 
-![How does it looks like?](https://github.com/HaniaNassalska/todos-list-react/blob/main/README/reademe.gif?raw=true)
+![How does it looks like?](https://github.com/HaniaNassalska/todos-list-react/blob/main/README/readme.gif?raw=true)
 ## [Demo version](https://hanianassalska.github.io/todos-list-react/)
 
 ## Used technologies
