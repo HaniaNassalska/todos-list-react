@@ -11,6 +11,12 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   &.${activeClassName} {
     font-weight: bold
   }
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  };
+
 `;
 
 export const NaviItem = styled.li`
