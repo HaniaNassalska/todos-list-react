@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const TextContainer = styled.div`
+margin-top: -10px;
 padding: 30px;
 padding-top: 10px;
 padding-bottom: 10px;
