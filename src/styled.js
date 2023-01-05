@@ -21,6 +21,7 @@ export const NaviItem = styled.li`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     grid-gap: 50px;
-    padding: 20px;;
+    padding: 20px;
+    grid-template-columns: auto;
   }
 `;
