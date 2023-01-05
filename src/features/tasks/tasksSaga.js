@@ -6,10 +6,10 @@ import { saveTasksInLocalStorage } from "./taskLocalStorage";
 function* fetchExampleTasksHandler() {
   try {
     const exempleTasks = yield call(getExampleTasks);
-    yield put(fetchDownloadingTasks())
-    yield delay(1000)
-    yield put(setTask(exempleTasks))
-    yield put(fetchDownloadTaskSuccess())
+    yield put(fetchDownloadingTasks());
+    yield delay(1000);
+    yield put(setTask(exempleTasks));
+    yield put(fetchDownloadTaskSuccess());
   }
   catch (error) {
     yield call(alert, "Coś poszło nie tak!");
@@ -18,7 +18,7 @@ function* fetchExampleTasksHandler() {
 
 function* saveTasksInLocalStorageHandler() {
   const tasks = yield select(selectTasks);
-  yield call(saveTasksInLocalStorage, tasks)
+  yield call(saveTasksInLocalStorage, tasks);
 }
 
 export function* taskSaga() {
