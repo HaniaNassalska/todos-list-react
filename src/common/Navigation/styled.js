@@ -5,6 +5,7 @@ export const StyledNavigation = styled.nav`
 `;
 
 export const NaviList = styled.ul`
+  margin: 0px;
   list-style-type: none;
   display: flex;
   justify-content: center;
