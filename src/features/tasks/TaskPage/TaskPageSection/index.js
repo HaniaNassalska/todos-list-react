@@ -1,7 +1,7 @@
 import { DecorationalLine, Header, StyledSection, Title, Wrapper } from "./styled";
 
 
-const TaskPageSection = ({ title, body, extraHeaderContent }) => (
+const TaskPageSection = ({ title, body }) => (
   <StyledSection>
       <Header>
           <Title>{title}</Title>
