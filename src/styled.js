@@ -1,14 +1,10 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-const activeClassName = "link-active";
-
-export const StyledNavLink = styled(NavLink).attrs(() => ({
- activeClassName,
-}))`
+export const StyledNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.colors.white};
   text-decoration: none;
-  &.${activeClassName} {
+  &.active {
     font-weight: bold
   }
 
@@ -16,7 +12,6 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     transform: scale(1.05);
     cursor: pointer;
   };
-
 `;
 
 export const NaviItem = styled.li`
