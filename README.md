@@ -3,9 +3,9 @@
 Hello, I’m pleased to present to you my project. I made it as one of the tasks during the Front-end developer course (youcode.pl), which I’ve been attending. 
 The task was to make it work and look like the project they showed us. This is my first project using React.
 
-## How does it looks like?
+## What does it look like?
 
-![How does it looks like?](https://github.com/HaniaNassalska/todos-list-react/blob/main/README/readme.gif?raw=true)
+![What does it look like?](https://github.com/HaniaNassalska/todos-list-react/blob/main/README/readme.gif?raw=true)
 ## [Demo version](https://hanianassalska.github.io/todos-list-react/)
 
 ## Used technologies
